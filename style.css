@@ -1,0 +1,142 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for AI theme */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Login container styling */
+.login-container {
+    background-color: #1c1c1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+.login-container input {
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.login-container button {
+    padding: 12px;
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 5px;
+    color: #0d0d0d;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #00cca3;
+}
+
+/* Card container styling */
+.card-container {
+    display: none;
+    width: 90%;
+    max-width: 450px;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+}
+
+.ai-glow {
+    background-color: #1c1c1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 30px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.ai-glow h1 {
+    color: #00ffcc;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.ai-glow p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.ai-glow ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-glow ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Dark emoji styling */
+.ai-glow ul li::before {
+    content: '🌑';
+    margin-right: 8px;
+    color: #ffcc00;
+}
+
+.ai-glow ul li:first-child::before {
+    content: '🌌';
+}
+
+.ai-glow ul li:nth-child(2)::before {
+    content: '🌃';
+}
+
+.ai-glow ul li:nth-child(3)::before {
+    content: '🌙';
+}
+
+.ai-glow ul li:last-child::before {
+    content: '🌠';
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .login-container, .card-container {
+        width: 90%;
+    }
+
+    .ai-glow h1 {
+        font-size: 22px;
+    }
+
+    .ai-glow p, .ai-glow ul li {
+        font-size: 16px;
+    }
+}
